@@ -18,11 +18,11 @@ This project takes user input for daily study habits and evaluated productivity 
  4. Run
 python main.py
 
-##Example output
+## Example output
 Your score is: 8/10
 Good productivity habits!
 
-##Future improvements
+## Future improvements
 - Daily habit tracking
 - Graphs?
 - Web-based interface
