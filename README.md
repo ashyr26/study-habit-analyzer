@@ -6,7 +6,10 @@ This project takes user input for daily study habits and evaluated productivity 
 
 ## Features
 - takes input (study hrs, sleep time, procrastination lvl)
-- calculates productivity score
+- calculates productivity score out of 10
+- provides personal feedback
+- Detects unhealthy habits
+- Prevents unrealistic score values
 
  ## How to run
  1. Python IDLE is installed
@@ -14,3 +17,15 @@ This project takes user input for daily study habits and evaluated productivity 
  3. Open file
  4. Run
 python main.py
+
+##Example output
+Your score is: 8/10
+Good productivity habits!
+
+##Future improvements
+- Daily habit tracking
+- Graphs?
+- Web-based interface
+
+##Programmer
+Ashmira <3
