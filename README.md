@@ -2,7 +2,7 @@
 python-based study habit analyzer that calculates a productivity score based on study time, sleep and procrastination.
 
 ## Overview
-This project takes user input for daily study habits and evaluated productivity using a weighted scroing system. It is designed in order to explore how behavioural factors like procrastination affects learning outcomes.
+This project takes user input for daily study habits and evaluates productivity using a weighted scoring system. It is designed in order to explore how behavioural factors like procrastination affects learning outcomes.
 
 ## Features
 - takes input (study hrs, sleep time, procrastination lvl)
