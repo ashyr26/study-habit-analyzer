@@ -1,13 +1,24 @@
 print("STUDY HABIT ANALYZER")
 
+def save_data(study, sleep, p, score):
+    f=open("study_log.txt", "a")
+    f.write("Study Hours: " + str(study))
+    f.write(" | Sleep Hours: " + str(sleep))
+    f.write(" | Procrastination Level: " + str(p))
+    f.write(" | Score: " + str(round(score,2)) + "/10")
+    f.write("\n")
+    f.close()
+
 study=int(input("Enter your study hours: "))
 #study feedback
 if study==0:
     print("No study time detected today.\nA little progress is better than none, try creating a balanced study rotuine!")
-elif 0<study<2:
+elif 0<study<=2:
     print("Good efforts!")
-elif 2<=study<=5:
-    print("Locked in!") 
+elif 2<study<=5:
+    print("Locked in!")
+elif 6<=study<=9:
+    print("Excellent consistency! Keep maintaining balance.")
 elif study>9:
     print("Overstudying will cause you stress!")
 
@@ -37,5 +48,13 @@ if score<0:
 elif score>10:
     score=0
     print("Your habits are very intense. Make sure you're balancing work with rest.\nRemember, consistency matters more than pushing yourself too hard!")
+if score >= 8:
+    print("🏆 Badge Earned: Productive Day!")
+elif score >= 6:
+    print("⭐ Good Progress!")
     
 print("your score is: ",round(score),"/10")
+
+save_data(study, sleep, p, score)
+
+print("Today's data has been saved successfully!")
